@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="elem" style="border: 1px solid #000;position: absolute">123132</div>
+<script src="../js/jquery-2.1.4.js"></script>
+<script>
+    var t=function(){
+        function a($left, $top) {
+            $('#elem').css({
+                left: $left,
+                top: $top
+            });
+            return  $('#elem').offset()
+        }(5, 6);
+    }
+
+
+    console.log(setOffset)
+    setOffset(100, 20);
+</script>
+</body>
+</html>
